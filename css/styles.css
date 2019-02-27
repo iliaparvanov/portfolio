@@ -1,0 +1,18 @@
+.has-bg-img {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./../images/main-bg.jpg) center / cover;
+    background-color: black;
+}
+
+.animated {
+    transition: 0.3s;
+}
+
+.transparent-white-btn {
+    background-color: rgba(255,255,255, 0);
+    color: white;
+}
+
+.transparent-white-btn:hover {
+    background-color: white;
+    color: black;
+}
