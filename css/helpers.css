@@ -1,0 +1,46 @@
+.has-bg-img {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./../images/main-bg.jpg) center / cover;
+    background-color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated {
+    transition: 0.3s;
+}
+
+.transparent-white-btn {
+    background-color: rgba(255,255,255, 0);
+    color: white;
+}
+
+.transparent-white-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#down-arrow {
+    opacity: 1;
+    animation: Bounce_Up_Down 4s ease infinite;
+    animation-delay: 1s;
+}
+
+@keyframes Bounce_Up_Down {
+    0% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(-25px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
