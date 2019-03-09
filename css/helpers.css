@@ -10,7 +10,11 @@
 }
 
 .animated {
-    transition: 0.3s;
+    transition: all 0.3s;
+}
+
+.grow:hover {
+    transform: scale(1.1);
 }
 
 .transparent-white-btn {
