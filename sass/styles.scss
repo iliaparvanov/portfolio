@@ -7,16 +7,27 @@ $family-sans-serif: "Montserrat", sans-serif;
 $family-primary: $family-sans-serif;
 $family-secondary: "Noto Sans", sans-serif;
 
+$white: rgb(245, 245, 245);
+$white-gray: rgb(190, 190, 190);
 $dark: rgb(0, 0, 0);
 $blue: rgb(103, 149, 209);
 $dark-blue: rgb(41, 94, 163);
 
-$primary: $blue;
+$primary: $white;
+$info: $blue;
 
 $body-size: 18px;
 $body-line-height: 1.7;
 $body-background-color: $dark;
-$text: rgb(211, 211, 211); 
+$text: $white-gray; 
+
+.section {
+    height: 100vh;
+}
+
+.is-underlined {
+    box-shadow: inset 0 -4px 0 $info;
+}
 
 @import "../node_modules/bulma/bulma.sass";
 
