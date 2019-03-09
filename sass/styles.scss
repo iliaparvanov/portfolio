@@ -7,9 +7,17 @@ $family-sans-serif: "Montserrat", sans-serif;
 $family-primary: $family-sans-serif;
 $family-secondary: "Noto Sans", sans-serif;
 
+$dark: rgb(0, 0, 0);
+$blue: rgb(103, 149, 209);
+$dark-blue: rgb(41, 94, 163);
+
+$primary: $blue;
+
+$body-size: 18px;
+$body-line-height: 1.7;
+$body-background-color: $dark;
+$text: rgb(211, 211, 211); 
 
 @import "../node_modules/bulma/bulma.sass";
-
-
 
 // @import "../css/helpers.css";
