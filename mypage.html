@@ -10,45 +10,49 @@
     <!-- <link rel="stylesheet" href="css/smooth-scroll.css"> -->
   </head>
   <body>
+
     <section class="hero is-fullheight has-bg-img has-text-white">
-      <div class="hero-head" id="contactme">
-          <a class="button transparent-white-btn is-family-secondary animated is-pulled-right" style="margin: 1rem;" href="">
-              <span class="icon is-small">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span>Contact Me</span>
-          </a>
+      <div class="hero-head">
+          <nav class="navbar is-fixed-top animated" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+              </div>
+              <div class="navbar-menu">
+                <div class="navbar-end is-size-6">
+                  <a href="#front-end" class="animated navbar-item">
+                    Front-end
+                  </a>
+                  <a href="#back-end" class="animated navbar-item">
+                    Back-end
+                  </a>
+                  <a href="gamedev" class="animated navbar-item">
+                    Game dev
+                  </a>
+                  <div class="navbar-item">
+                    <a class="button transparent-white-btn animated" href="">
+                        <span class="icon is-small">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>Contact Me</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
+            </nav>
       </div>
-      <div class="hero-body">
-          <div class="container has-text-centered has-text-white">
+      <div class="hero-body is-marginless is-paddingless" style="width: 100vw;">
+          <div class="has-text-centered has-text-white" style="width: 100%;">
             <h1 class="subtitle is-family-secondary has-text-white">
                 Why hello there
             </h1>
-            <h2 class="title has-text-white">
+            <h2 class="title has-text-white" id="imilia">
                 I'm Ilia
             </h2>
-            <div class="columns is-family-secondary is-vcentered" id="nav">
-              <div class="column is-3">
-              </div>
-              <div class="column is-2">
-                  <a href="#front-end" class="has-text-white is-uppercase">
-                    front-end
-                  </a>
-              </div>
-              <div class="column is-2">
-                  <a href="#back-end" class="has-text-white is-uppercase">
-                    back-end
-                  </a>
-              </div>
-              <div class="column is-2">
-                  <a href="#gamedev" class="has-text-white is-uppercase">
-                    game dev
-                  </a>
-              </div>
-              <div class="column is-3">
-
-              </div>
-            </div>
           </div>
       </div>
       <div class="hero-foot">
