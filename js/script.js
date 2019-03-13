@@ -33,7 +33,7 @@ var blackNavbar = new ScrollMagic.Scene({
 	triggerHook: 'onLeave',
 	triggerElement: '#imilia'
 })
-.setClassToggle('.navbar', 'has-background-dark')
+.setClassToggle('.navbar', 'has-background-black')
 .addTo(controller);
 
 

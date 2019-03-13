@@ -8,7 +8,8 @@ $family-secondary: "Noto Sans", sans-serif;
 
 $white: rgb(245, 245, 245);
 $white-gray: rgb(210, 210, 210);
-$dark: rgb(0, 0, 0);
+$black: rgb(0, 0, 0);
+$dark: rgb(29, 29, 29);
 $blue: rgb(103, 149, 209);
 $dark-blue: rgb(41, 94, 163);
 $purple: rgb(124, 111, 214);
@@ -23,13 +24,13 @@ $link-visited: $primary;
 
 $body-size: 18px;
 $body-line-height: 1.7;
-$body-background-color: $dark;
+$body-background-color: $black;
 $text: $white-gray; 
 
 $navbar-item-color: $white;
 $navbar-item-hover-color: $dark;
 
-
+$footer-background-color: $dark;
 
 @import "../node_modules/bulma/bulma.sass";
 
