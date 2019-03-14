@@ -6927,6 +6927,58 @@ label.panel-block {
   background-color: #1d1d1d;
   padding: 3rem 1.5rem 6rem; }
 
+.hoverable-card {
+  position: relative;
+  overflow: hidden; }
+  .hoverable-card img {
+    max-width: 100%;
+    transition: all 0.5s ease-in-out; }
+
+.card-caption {
+  background-color: rgba(29, 29, 29, 0.8);
+  z-index: 5;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  font-size: 2em; }
+
+.hoverable-card:hover .card-caption {
+  visibility: visible;
+  -webkit-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+.hoverable-card:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out; }
+
+.caption-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .caption-text-container a.button {
+    width: 30%; }
+
 #contactme, #nav {
   position: relative;
   z-index: 10; }

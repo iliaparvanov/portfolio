@@ -4,7 +4,9 @@
   "description": "This is the project for my personal portfolio",
   "main": "sass/styles.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "keywords": [
     "portfolio",
@@ -16,9 +18,7 @@
     "bulma": "^0.7.4",
     "node-sass": "^4.11.0"
   },
-  "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+  "dependencies": {
+    "imagehover.css": "^1.0.0"
   }
 }
