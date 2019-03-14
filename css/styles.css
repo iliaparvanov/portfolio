@@ -6934,7 +6934,7 @@ label.panel-block {
   overflow: hidden; }
   .hoverable-card img {
     max-width: 100%;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
 
 .card-caption {
   background-color: rgba(29, 29, 29, 0.8);
@@ -6965,7 +6965,7 @@ label.panel-block {
 
 .hoverable-card:hover img {
   transform: scale(1.1);
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 .caption-text-container {
   position: absolute;
