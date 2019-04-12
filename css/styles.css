@@ -7013,6 +7013,16 @@ label.panel-block {
 .grow:hover {
   transform: scale(1.1); }
 
+.transparent-purple-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border-color: #7c6fd6; }
+
+.transparent-purple-btn:hover {
+  background-color: #7c6fd6;
+  color: white;
+  border-color: #7c6fd6; }
+
 .transparent-white-btn {
   background-color: rgba(255, 255, 255, 0);
   color: white; }
