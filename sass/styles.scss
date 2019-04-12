@@ -10,7 +10,7 @@ $white: rgb(245, 245, 245);
 $white-gray: rgb(210, 210, 210);
 $black: rgb(0, 0, 0);
 $dark: rgb(29, 29, 29);
-$blue: rgb(103, 149, 209);
+$blue: #6795d1;
 $dark-blue: rgb(41, 94, 163);
 $purple: rgb(124, 111, 214);
 $turquoise: rgb(93, 208, 179);
@@ -38,3 +38,5 @@ $footer-background-color: $dark;
 
 @import "component.scss";
 @import "helpers.scss";
+
+
