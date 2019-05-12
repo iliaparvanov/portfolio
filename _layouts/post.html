@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="post-content e-content" itemprop="articleBody">
+
+      <section class="section is-medium">
+          <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-11">
+                    <h1 class="title">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                        <h2 class="subtitle is-size-5">{{ page.subtitle }}</h2>
+                    {% endif %}
+                </div>
+            </div>
+              <div class="columns is-centered is-variable is-3-mobile is-3-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <div class="column is-8 is-family-secondary">
+                      {{ content }}
+                  </div>
+                  <div class="column is-3 is-family-secondary">
+                        <p class="has-text-weight-semibold">
+                            By Ilia Parvanov
+                        </p>
+                        <p>
+                            {{ page.date | date: "%B %-d" }}, {{ page.date | date: "%Y" }}
+                        </p>
+                        {% for category in page.categories %}
+                            <span>#{{ category }} </span>
+                        {% endfor %}
+                        <br><br><br>
+                        <p class="has-text-weight-semibold">
+                            More articles you might be interested in
+                        </p>
+                        <br>
+                        {% for category in page.categories limit:1 %}
+                            {% for post in site.categories[category] limit:3 %}
+                                {% unless post.title == page.title %}
+                                    <a href="{{ post.url }}">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-4by3">
+                                                    <img style="object-fit: cover;" src="{{ post.thumbnail }}" alt="{{ post.title }}"\>
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-6">{{ post.title }}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <time datetime="2016-1-1"><span class="is-size-7">{{ post.date | date: "%B %-d" }}, {{ post.date | date: "%Y" }}</span></time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                {% endunless %}
+                            {% endfor %}
+                        {% endfor %}
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

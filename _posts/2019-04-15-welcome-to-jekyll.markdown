@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "First blog post!"
+subtitle: "This is one glorious subtitle"
 date:   2019-04-15 09:36:33 +0300
-categories: got blog
-thumbnail: "./../assets/images/thumbnail1.jpg"
+categories: blog got
+thumbnail: "/assets/images/thumbnail1.jpg"
 ---
 Very many spoilers for the Season 8 premiere of “Game of Thrones”. Jon Snow dies. Everybody dies. Dragons are awesome.
 

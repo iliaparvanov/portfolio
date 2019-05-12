@@ -12,7 +12,7 @@ $family-secondary: "Noto Sans", sans-serif;
 $white: rgb(245, 245, 245);
 $white-gray: rgb(210, 210, 210);
 $black: rgb(0, 0, 0);
-$dark: rgb(29, 29, 29);
+$dark: #121212;
 $blue: #6795d1;
 $dark-blue: rgb(41, 94, 163);
 $purple: rgb(124, 111, 214);
@@ -36,6 +36,12 @@ $navbar-item-color: $white;
 $navbar-item-hover-color: $dark;
 
 $footer-background-color: $dark;
+
+$title-color: $white;
+$subtitle-color: $white-gray;
+
+$card-color: $white-gray;
+$card-background-color: $dark;
 
 @import "./bulma/bulma.sass";
 
