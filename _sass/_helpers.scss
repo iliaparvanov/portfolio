@@ -69,6 +69,20 @@ code {
     border-color: $purple;
 }
 
+.transparent-green-btn {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: $turquoise;
+}
+
+.transparent-green-btn:hover {
+    background-color: $turquoise;
+    color: white;
+    border-color: $turquoise;
+}
+
+
+
 .transparent-white-btn {
     background-color: rgba(255,255,255, 0);
     color: white;

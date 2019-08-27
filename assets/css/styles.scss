@@ -43,6 +43,8 @@ $subtitle-color: $white-gray;
 $card-color: $white-gray;
 $card-background-color: $dark;
 
+$input-placeholder-color: rgb(122, 122, 122);
+
 @import "./bulma/bulma.sass";
 
 @import "component.scss";
