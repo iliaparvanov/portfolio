@@ -59,7 +59,7 @@ code {
 
 .transparent-purple-btn {
     background-color: rgba(255, 255, 255, 0);
-    color: white;
+    color: $text;
     border-color: $purple;
 }
 
@@ -71,7 +71,7 @@ code {
 
 .transparent-green-btn {
     background-color: rgba(255, 255, 255, 0);
-    color: white;
+    color: $text;
     border-color: $turquoise;
 }
 

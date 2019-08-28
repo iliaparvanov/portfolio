@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Check out this new cool feature in javascript"
-subtitle: "This is something browsers won't support for another 3 years"
-date:   2019-05-12 12:16:33 +0300
-categories: blog javascript
-thumbnail: "/assets/images/javascript.png"
+title:  "How I built my website"
+subtitle: ""
+date:   2019-08-28 12:16:33 +0300
+categories: programming technical 
+thumbnail: "/assets/images/first-post.jpg"
 ---
 Blablabla something about javascipt and how cool it is.
 
