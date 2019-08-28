@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "How I built my website"
-subtitle: ""
+subtitle: "With Bulma, Jekyll and Forestry"
 date:   2019-08-28 12:16:33 +0300
 categories: programming technical 
 thumbnail: "/assets/images/first-post.jpg"
 ---
-Blablabla something about javascipt and how cool it is.
+In this article, I will lay out how I made a fast static website with a blog and hosted it for free.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 

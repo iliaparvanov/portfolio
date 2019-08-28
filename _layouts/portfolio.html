@@ -90,7 +90,7 @@
         <div class="columns is-centered">
           <div class="column is-3">
             <figure class="image is-square">
-              <img class="is-rounded" src="assets/images/about-me-cropped.png">
+              <img class="is-rounded" src="assets/images/about-me-cropped.jpg">
             </figure>
           </div>
         </div>
@@ -203,7 +203,7 @@
             <h1 class="is-uppercase has-text-primary is-size-4"><span class="is-underlined animation-toggle">other projects</span></h1>
           </div>
         </div>
-        <div class="columns">
+        <div class="columns is-multiline">
           <div class="column is-6">
             <div class="hoverable-card">
               <figure class="image is-3by2">
@@ -231,11 +231,29 @@
                 <div class="caption-text-container">
                     <p class="is-family-secondary is-size-5">Visual Store Pick</p>
                     <p class="is-family-secondary is-size-6">A project I worked on together with 4 other students as part of a compulsory two-week internship at <a href="https://www.ocadotechnology.com/">Ocado Technology</a></p>
-                    <a class="button transparent-white-btn animated is-rounded" target="_blank" href="https://github.com/SimeonHG/VisualSP">
-                      <span class="icon">
-                        <i class="fab fa-github fa-lg"></i>
+                    <a role="button" class="modal-btn button transparent-white-btn animated is-rounded" data-target="store-pick-modal">
+                      <span class="">
+                        Learn more
                       </span>
                     </a>
+                </div>    
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="hoverable-card">
+              <figure class="image is-3by2">
+                <img style="object-fit: cover;" src="assets/images/asteroids-banner.JPG" alt="Asteroids clone"/>
+              </figure>
+              <div class="card-caption">
+                <div class="caption-text-container">
+                    <p class="is-family-secondary is-size-5">Modern Asteroids clone</p>
+                    <p class="is-family-secondary is-size-6">A project completed at the end of a short game development course conducted by a couple of Ubisoft employees at TUES</a></p>
+                    <a role="button" class="modal-btn button transparent-white-btn animated is-rounded" data-target="asteroids-modal">
+                        <span class="">
+                          Learn more
+                        </span>
+                      </a>
                 </div>    
               </div>
             </div>
@@ -327,12 +345,55 @@
           </div>
       </div>
     </footer>
+
+    <div class="modal" id="store-pick-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Visual Store Pick</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+            <a class="button is-dark is-rounded" target="_blank" href="https://github.com/SimeonHG/VisualSP">
+              <span class="icon">
+                <i class="fab fa-github fa-lg"></i>
+              </span>
+              <span>Github</span>
+            </a>
+        </footer>
+      </div>
+    </div>
+
+    <div class="modal" id="asteroids-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Asteroids</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+              
+          </section>
+          <footer class="modal-card-foot">
+              <a class="button is-dark is-rounded" target="_blank" href="https://github.com/iliaparvanov/asteroids">
+                <span class="icon">
+                  <i class="fab fa-github fa-lg"></i>
+                </span>
+                <span>Github</span>
+              </a>
+          </footer>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/navbar-burger-script.js"></script>
+    <script src="assets/js/modals-script.js"></script>
 
     {%- include analytics.html -%}
   </body>
