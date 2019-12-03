@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png" >
-    <!-- <link rel="stylesheet" href="css/debug.css"> -->
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/debug.css"> -->
     <!-- <link rel="stylesheet" href="css/smooth-scroll.css"> -->
   </head>
   <body>
@@ -46,11 +46,11 @@
                   </a>
                 </div>
                 <div class="navbar-end is-size-6">
-                  <a href="#myskillset" class="animated navbar-item is-hidden-touch">
-                    My skillset
-                  </a>
                   <a href="#clientwork" class="animated navbar-item is-hidden-touch">
                     Client work
+                  </a>
+                  <a href="#myskillset" class="animated navbar-item is-hidden-touch">
+                    My skillset
                   </a>
                   <a href="#other" class="animated navbar-item is-hidden-touch">
                     Other projects
@@ -109,43 +109,6 @@
         </div>
       </div>
     </section>
-    <section class="section hidden" id="myskillset">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="is-uppercase has-text-primary is-size-4">
-              <span class="is-underlined-purple animation-toggle">
-                My technical expertise
-              </span>
-            </h1>
-          </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-8 has-text-justified">
-              <span class="is-size-5 is-size-6-mobile is-family-secondary">
-                At TUES, I have studied a plethora of subjects related to programming such as Object-oriented programming (C++ and Java), Operating systems (C), Programming technology (Ruby on Rails, Node.js, jQuery) and Database management systems (MySQL), to name a few.
-                <br>
-                Apart from that, I have plenty of knowledge in front-end development (HTML5, CSS3, ES6 Javascript and the Bulma CSS framework) and game development (mostly Unreal Engine). I have also dabbled in Android app development, genetic algorithms and deep learning.
-                <br><br>
-              </span>
-              <div class="has-text-centered">
-                <h2 class="is-uppercase has-text-primary is-family-secondary is-size-5">
-                  <span class="">
-                    What can I do for you?
-                  </span>
-                </h2>
-              </div>
-              <span class="is-size-5 is-size-6-mobile is-family-secondary">
-                The core of my freelancing services is developing <span class="has-text-weight-bold has-text-white">Wordpress</span> websites. Wordpress is the most popular CMS (and will continue to be for the foreseeable future) due to several factors: it is very SEO-friendly (in other words, Wordpress websites usually rank well on Google and other search engines), it is customizable and, above all, it is easy to use even for non-techies (after the initial set-up and development). So, if you are interested in building any kind of website where you want to be able to edit the content (eg a blog, a portfolio or even a store), Wordpress is most likely the right choice.
-                <br>
-                I also offer other services for customers who desire something simpler or would like to avoid Wordpress for another reason. I design and develop <span class="has-text-weight-bold has-text-white">static websites</span> (ie sites without editable content) and <span class="has-text-weight-bold has-text-white">simple blogs</span> which are easier to manage than a full-fledged Wordpress blog.
-                <br>
-                Have something in mind which was not mentioned above? <a href="#contactme">Contact me</a> and we can work out the details!
-              </span>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="section hidden" id="clientwork">
       <div class="container">
           <div class="columns is-centered">
@@ -197,6 +160,76 @@
           </div>
       </div>
     </section>
+    <section class="section m-b-xxl hidden" id="myskillset">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="is-uppercase has-text-primary is-size-4">
+              <span class="is-underlined-purple animation-toggle">
+                My technical expertise
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-8 has-text-justified">
+              <span class="is-size-5 is-size-6-mobile is-family-secondary">
+                At TUES, I have studied a plethora of subjects related to programming such as Object-oriented programming (C++ and Java), Operating systems (C), Programming technology (Ruby on Rails, Node.js, jQuery) and Database management systems (MySQL), to name a few.
+                <br>
+                Apart from that, I have plenty of knowledge in front-end development (HTML5, CSS3, ES6 Javascript and the Bulma CSS framework) and game development (mostly Unreal Engine). I have also dabbled in Android app development, genetic algorithms and deep learning.
+                <br><br>
+              </span>
+          </div>
+        </div>
+        <div class="columns  is-centered">
+          <div class="column is-12">
+              <div class="has-text-centered m-t-xxl">
+                <h2 class="is-uppercase has-text-primary is-size-4">
+                  <span class="">
+                    What can I do for you?
+                  </span>
+                </h2>
+              </div>
+              <div class="columns is-variable is-8">
+                <div class="column is-one-third">
+                  <figure class="image is-square">
+                    <img src="assets/images/custom_wordpress_2.png">
+                  </figure>
+                  <h3 class="has-text-centered has-text-warning has-text-weight-semibold is-size-5 m-b-lg">
+                    Wordpress website development
+                  </h3>
+                  <p class="has-text-centered is-family-secondary">
+                      If you are interested in building any kind of website where you want to be able to edit the content (eg a blog, a portfolio or even a store), Wordpress is most likely the right choice.
+                  </p>
+                </div>
+                <div class="column is-one-third">
+                  <figure class="image is-1by1">
+                    <img src="assets/images/custom_websites_2.png">
+                  </figure>
+                  <h3 class="has-text-centered has-text-warning has-text-weight-semibold is-size-5 m-b-lg">
+                    Custom website development
+                  </h3>
+                  <p class="has-text-centered is-family-secondary">
+                      I design and develop static websites (ie sites without editable content) and simple blogs which are easier to manage than a full-fledged Wordpress blog.
+                  </p>
+                </div>
+                <div class="column is-one-third">
+                  <figure class="image is-1by1">
+                    <img src="assets/images/custom_software_2.png">
+                  </figure>
+                  <h3 class="has-text-centered has-text-warning has-text-weight-semibold is-size-5 m-b-lg">
+                    Custom software development
+                  </h3>
+                  <p class="has-text-centered is-family-secondary">
+                    Have another kind of software project in mind like a mobile app, desktop app or something entirely different? Contact me and we can work out the details!
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
     <section class="section hidden" id="other">
       <div class="container">
         <div class="columns is-centered">
